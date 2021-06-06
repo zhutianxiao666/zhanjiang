@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        flex-direction 方向
+        flex-wrap 换行
+        flex-flow 是lex-direction  flex-wrap 的简写
+        justify-content 在主轴上的防线
+        align-items 对齐方式
+        align-content 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
+        */
+        .father {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            background-color: #55a532;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            /*align-items: flex-start;*/
+            /*align-content:flex-start;*/
+
+        }
+        .son {
+            /*flex: 1;*/
+            box-sizing: border-box;
+            height: 50%;
+            width: 25%;
+            border: 1px solid black;
+        }
+        .a1 {
+            flex: 1;
+            border: 1px solid black;
+        }
+        .a2 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<!--<div class="father">-->
+<!--    <div class="son">1</div>-->
+<!--    <div class="son">2</div>-->
+<!--    <div class="son">3</div>-->
+<!--    <div class="son">4</div>-->
+<!--    <div class="son">5</div>-->
+<!--</div>-->
+<!--<div class="father">-->
+<!--    <span class="a1"></span>-->
+<!--    <span class="a1"></span>-->
+<!--</div>-->
+
+<div class="father">
+    aaa
+</div>
+</body>
+</html>

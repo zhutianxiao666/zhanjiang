@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            width: 100px;
+            height: 1200px;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+<script>
+    console.log(document.querySelector('.son').parentNode.offsetHeight,document.querySelector('.son').parentNode.offsetWidth);
+</script>
+</body>
+</html>

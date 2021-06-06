@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            display: flex;
+            list-style-type: none;
+            background-color: orange;
+        }
+        .clearfix:after,
+        .clearfix:before {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        li {
+            flex: 1;
+            position: relative;
+            height: 100px;
+            vert-align: top;
+            padding-left: 10px;
+        }
+        li:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            height: 80%;
+            width: 2px;
+            margin: 10px 0 0;
+            background-color: brown;
+            vertical-align: top;
+        }
+        img {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<ul class="clearfix">
+    <li>1</li>
+    <li class="light">2</li>
+    <li>3</li>
+</ul>
+<!--<div>-->
+
+<!--    <img src="img/u=732532755,1315522372&fm=26&gp=0.jpg" height="300" width="400"/>aaa-->
+<!--</div>-->
+</body>
+</html>

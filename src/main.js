@@ -2,7 +2,9 @@ import Vue from 'vue'
 import App from './App.vue';
 import router from './router';
 import store from './store';
+import './config/rem'
 // import ajax from './ajax';
+import './css/font.styl'
 Vue.config.productionTip = false;
 
 document.body.onselectstart = function () {
